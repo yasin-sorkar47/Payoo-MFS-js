@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Mobile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="h-screen flex justify-center items-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-5">
+            <div class="mx-4 bg-white py-12 px-6 rounded-md shadow-2xl border">
+              <h1 class="text-2xl font-bold text-center mb-5 text-gray-500">
+                Log In Form
+              </h1>
+              <!-- log in section -->
+              <form action="">
+                <label for="" class="text-lg font-medium"
+                  >Your Mobile Number</label
+                >
+                <input
+                  id="number-input"
+                  class="w-full border outline-none p-2 rounded-md mt-1"
+                  type="text"
+                />
+                <label for="" class="text-lg font-medium">Your Pin</label>
+                <input
+                  id="pin-input"
+                  class="w-full border outline-none p-2 rounded-md mt-1"
+                  type="password"
+                />
+                <button
+                  id="logIn-btn"
+                  class="btn w-full mt-4 bg-purple-400 text-xl font-semibold text-white"
+                >
+                  Log in
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./logIn.js"></script>
+  </body>
+</html>

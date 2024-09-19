@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amount</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="h-screen flex justify-center items-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-5 relative">
+            <!-- log out  -->
+            <button id="logOut" class="btn btn-sm absolute right-5 top-5">
+              Log out
+            </button>
+            <!-- total amount count start -->
+            <div class="stats shadow">
+              <div class="stat p-5">
+                <h1 class="text-center text-2xl font-bold">Total Amount</h1>
+                <div id="first-amount" class="stat-value text-center mt-2">
+                  400
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- total amount count end -->
+            <!-- buttons start  -->
+            <div>
+              <button id="add-money-main-btn" class="btn btn-lg mr-3">
+                add money
+              </button>
+              <button id="cashOut-main-btn" class="btn btn-lg">cashOut</button>
+            </div>
+            <!-- button end  -->
+            <div class="divider"></div>
+            <!-- add form start -->
+            <div
+              id="add-money-form"
+              class="mx-4 bg-white py-12 px-6 rounded-md shadow-2xl border"
+            >
+              <form action="">
+                <label for="" class="text-lg font-medium">Your Amount</label>
+                <input
+                  id="amount-input"
+                  class="w-full border outline-none p-2 rounded-md mt-1"
+                  type="text"
+                />
+                <label for="" class="text-lg font-medium">Your Pin</label>
+                <input
+                  id="add-amount-pin-input"
+                  class="w-full border outline-none p-2 rounded-md mt-1"
+                  type="password"
+                />
+                <button
+                  id="add-money-btn"
+                  class="btn w-full mt-4 bg-purple-400 text-xl font-semibold text-white"
+                >
+                  add money
+                </button>
+              </form>
+            </div>
+            <!-- add form end -->
+            <!-- cashOU form start  -->
+            <div
+              id="cashOut-form"
+              class="mx-4 bg-white py-12 px-6 rounded-md shadow-2xl border hidden"
+            >
+              <form action="">
+                <label for="" class="text-lg font-medium">Your Amount</label>
+                <input
+                  id="cashOut-amount-input"
+                  class="w-full border outline-none p-2 rounded-md mt-1"
+                  type="text"
+                />
+                <label for="" class="text-lg font-medium">Your Pin</label>
+                <input
+                  id="cashOut-amount-pin-input"
+                  class="w-full border outline-none p-2 rounded-md mt-1"
+                  type="password"
+                />
+                <button
+                  id="cashOut-money-btn"
+                  class="btn w-full mt-4 bg-purple-400 text-xl font-semibold text-white"
+                >
+                  cash out
+                </button>
+              </form>
+            </div>
+            <!-- cashOUt form end -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./amount.js"></script>
+  </body>
+</html>
